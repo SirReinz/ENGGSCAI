@@ -1,0 +1,117 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--color-gray-50) 0%, var(--color-white) 100%);
+  padding: 3rem 1.5rem;
+}
+
+.app-header {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.app-header h1 {
+  font-family: 'Gilda Display', serif;
+  font-size: 3.5rem;
+  margin: 0 0 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+  color: var(--color-gray-600);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.app-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.action-container {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.analyze-button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  padding: 1rem 3.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analyze-button:hover:not(:disabled) {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.analyze-button:disabled {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: var(--color-gray-500);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.analyze-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.app-footer {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  text-align: center;
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 4px;
+}
+
+.app-footer p {
+  margin: 0;
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 2rem 1rem;
+  }
+
+  .app-header {
+    margin-bottom: 3rem;
+  }
+
+  .app-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .analyze-button {
+    padding: 0.875rem 2.5rem;
+    font-size: 0.9375rem;
+  }
+}
+
