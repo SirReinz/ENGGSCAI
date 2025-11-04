@@ -1,6 +1,9 @@
 # ENGGSCAI
 AI model for Skin Cancer
 
+# NOTE
+Keras files were too big for github, please user/train a pre-existing model and insert the model in to use the application. Naming it accordingly
+
 # Skin Cancer Detection App
 
 React TypeScript application with Flask backend for AI-powered skin lesion analysis using CNN models.
