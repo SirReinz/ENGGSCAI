@@ -55,6 +55,7 @@ VITE v5.x.x  ready in xxx ms
 ### Backend won't start
 - **Check Python is installed:** `python --version`
 - **Install dependencies:** `cd backend && pip install -r requirements.txt`
+- **Check installed version of tensorflow + keras** Recommended to update to latest version
 - **Port 5000 in use:** Change port in `backend/app.py` line 169
 
 ### Frontend won't start
